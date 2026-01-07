@@ -1,0 +1,49 @@
+managed implementation in class zbp_i_mass_po_upload unique;
+strict ;
+with draft;
+
+define behavior for ZI_MASS_PO_UPLOAD
+persistent table zdb_po_uploader
+draft table zdb_po_upload_dr
+lock master
+total etag LastChangedAt
+authorization master ( instance )
+early numbering
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) EndUser, FileId;
+
+  action POUploader result [1] $self;
+
+
+  side effects
+  {
+    field Attachment affects field FileStatus;
+
+  }
+
+
+  draft action Activate optimized;
+  draft action Edit;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+
+
+  mapping for zdb_po_uploader
+    {
+      EndUser            = end_user;
+      FileId             = file_id;
+      FileStatus         = file_status;
+      Attachment         = attachment;
+      Mimetype           = mimetype;
+      Filename           = filename;
+      LocalCreatedBy     = local_created_by;
+      LocalCreatedAt     = local_created_at;
+      LastChangedAt      = last_changed_at;
+      LocalLastChangedAt = local_last_changed_at;
+      LocalLastChangedBy = local_last_changed_by;
+    }
+}

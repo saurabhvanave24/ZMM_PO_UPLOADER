@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for Mass uploader'
+define service ZSD_MASS_PO_UPLOAD {
+  expose ZC_MASS_PO_UPLOAD;
+}

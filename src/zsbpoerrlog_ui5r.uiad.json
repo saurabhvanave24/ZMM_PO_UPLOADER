@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "PO Error Log"
+  },
+  "ui5AppDetails": {
+    "appId": "zpoerrlog"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_7709F6CBA47C53215F806C16B98229C7B23029CD_TM",
+    "semanticObject": "zpoerrlog",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_7709F6CBA47C53215F806C16B98229C7B23029CD_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "PO Error Log"
+      }
+    }
+  ]
+}

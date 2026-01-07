@@ -1,0 +1,6 @@
+projection;
+strict ( 1 );
+
+define behavior for ZC_ERROR_LOG_PO //alias <alias_name>
+{
+}

@@ -1,0 +1,137 @@
+@Metadata.layer: #CUSTOMER
+@UI:{ headerInfo: { typeName: 'PO Error Log',
+                      typeNamePlural: 'PO Error Log',
+                      title: {
+                               type: #STANDARD,
+                               value: 'Rownu'     } } }
+annotate entity ZC_ERROR_LOG_PO
+    with 
+{
+      @UI.facet: [ { id:             'Rownu',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'PO Error Log' } ]
+    @UI: { lineItem: [{ position:09,importance: #HIGH }], identification: [{ position: 09 }], selectionField: [{ position: 10 }] }
+  @UI.textArrangement: #TEXT_ONLY
+  @EndUserText.label: 'Row'
+  Rownu;
+ @UI: { lineItem: [{ position:10,importance: #HIGH }], identification: [{ position: 10 }], selectionField: [{ position: 10 }] }
+  @UI.textArrangement: #TEXT_ONLY
+  @EndUserText.label: 'File Name'
+  Filename;
+  @UI: { lineItem: [{ position:20,importance: #HIGH }], identification: [{ position: 20 }]}
+  @EndUserText.label: 'Message'
+  Message;
+  @UI: { lineItem: [{ position:30,importance: #HIGH }], identification: [{ position: 30 }]}
+  @EndUserText.label: 'User'
+  Username;
+  @UI: { lineItem: [{ position:40,importance: #HIGH }], identification: [{ position: 40 }]}
+  Sno;
+  @UI: { lineItem: [{ position:50,importance: #HIGH }], identification: [{ position: 50 }]}
+  CompanyCode;
+  @UI: { lineItem: [{ position:60,importance: #HIGH }], identification: [{ position: 60 }]}
+  CostCenter;
+  @UI: { lineItem: [{ position:70,importance: #HIGH }], identification: [{ position: 70 }]}
+  PurchasingDocumentType;
+  @UI: { lineItem: [{ position:80,importance: #HIGH }], identification: [{ position: 80 }]}
+  PoNumber;
+  @UI: { lineItem: [{ position:90,importance: #HIGH }], identification: [{ position: 90 }]}
+  PoDate;
+  @UI: { lineItem: [{ position:100,importance: #HIGH }], identification: [{ position: 100 }]}
+  VendorAccountNumber;
+  @UI: { lineItem: [{ position:110,importance: #HIGH }], identification: [{ position: 110 }]}
+  TermsOfPaymentKey;
+  @UI: { lineItem: [{ position:120,importance: #HIGH }], identification: [{ position: 120 }]}
+  PurchasingOrganization;
+  @UI: { lineItem: [{ position:130,importance: #HIGH }], identification: [{ position: 130 }]}
+  Plant;
+  @UI: { lineItem: [{ position:140,importance: #HIGH }], identification: [{ position: 140 }]}
+  PurchasingGroup;
+  @UI: { lineItem: [{ position:150,importance: #HIGH }], identification: [{ position: 150 }]}
+  CurrencyKey;
+  @UI: { lineItem: [{ position:160,importance: #HIGH }], identification: [{ position: 160 }]}
+  ValidityStartDate;
+  @UI: { lineItem: [{ position:170,importance: #HIGH }], identification: [{ position: 170 }]}
+  ValidityEndDate;
+  @UI: { lineItem: [{ position:180,importance: #HIGH }], identification: [{ position: 180 }]}
+  Incoterms;
+  @UI: { lineItem: [{ position:190,importance: #HIGH }], identification: [{ position: 190 }]}
+  IncotermsLocation;
+  @UI: { lineItem: [{ position:200,importance: #HIGH }], identification: [{ position: 200 }]}
+  ItemNumber;
+  @UI: { 
+  lineItem: [{ position: 201, importance: #HIGH }],
+  identification: [{ position: 201 }]
+}
+MaterialNumber;
+@UI: { 
+  lineItem: [{ position: 202, importance: #HIGH }],
+  identification: [{ position: 202 }]
+}
+ShortText;
+@UI: { 
+  lineItem: [{ position: 203, importance: #HIGH }],
+  identification: [{ position: 203 }]
+}
+MaterialGroup;
+@UI: { 
+  lineItem: [{ position: 204, importance: #HIGH }],
+  identification: [{ position: 204 }]
+}
+StorageLocation;
+@UI: { 
+  lineItem: [{ position: 205, importance: #HIGH }],
+  identification: [{ position: 205 }]
+}
+PoQuantity;
+@UI: { 
+  lineItem: [{ position: 206, importance: #HIGH }],
+  identification: [{ position: 206 }]
+}
+PoUom;
+@UI: { 
+  lineItem: [{ position: 207, importance: #HIGH }],
+  identification: [{ position: 207 }]
+}
+NetPrice;
+@UI: { 
+  lineItem: [{ position: 208, importance: #HIGH }],
+  identification: [{ position: 208 }]
+}
+PriceUnit;
+@UI: { 
+  lineItem: [{ position: 209, importance: #HIGH }],
+  identification: [{ position: 209 }]
+}
+TaxCode;
+@UI: { 
+  lineItem: [{ position: 210, importance: #HIGH }],
+  identification: [{ position: 210 }]
+}
+AcctAssignmentCategory;
+@UI: { 
+  lineItem: [{ position: 211, importance: #HIGH }],
+  identification: [{ position: 211 }]
+}
+GlAccount;
+@UI: { 
+  lineItem: [{ position: 212, importance: #HIGH }],
+  identification: [{ position: 212 }]
+}
+ValuationType;
+@UI: { 
+  lineItem: [{ position: 213, importance: #HIGH }],
+  identification: [{ position: 213 }]
+}
+ReqNo;
+@UI: { 
+  lineItem: [{ position: 214, importance: #HIGH }],
+  identification: [{ position: 214 }]
+}
+ReqItem;
+@UI: { 
+  lineItem: [{ position: 215, importance: #HIGH }],
+  identification: [{ position: 215 }]
+}
+InfoRecord;    
+}

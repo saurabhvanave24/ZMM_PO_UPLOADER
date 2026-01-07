@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for PO Uploader log'
+define service ZSD_ERROR_LOG_PO_DEF {
+  expose ZC_ERROR_LOG_PO;
+}

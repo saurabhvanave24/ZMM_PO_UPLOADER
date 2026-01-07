@@ -1,0 +1,14 @@
+unmanaged implementation in class zbp_i_error_log_po unique;
+strict ( 1 );
+
+define behavior for ZI_ERROR_LOG_PO //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+//  create ( authorization : global );
+//  update;
+//  delete;
+  field ( readonly ) Rownu;
+}

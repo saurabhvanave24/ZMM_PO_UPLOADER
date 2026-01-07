@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "PO Uploader"
+  },
+  "ui5AppDetails": {
+    "appId": "zpouploader"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_3AE8D03E67EEF770E880409C23F6FBFE8B95EDA0_TM",
+    "semanticObject": "zpoupl",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_3AE8D03E67EEF770E880409C23F6FBFE8B95EDA0_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "PO Uploader"
+      }
+    }
+  ]
+}
